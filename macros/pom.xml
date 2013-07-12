@@ -16,6 +16,11 @@
 			<artifactId>scala-library</artifactId>
 			<version>${scala.macroparadise.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>${scala.macroparadise.organisation}</groupId>
+			<artifactId>scala-reflect</artifactId>
+			<version>${scala.macroparadise.version}</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
