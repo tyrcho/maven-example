@@ -6,7 +6,7 @@
 	<artifactId>macros</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>org.scala-lang</groupId>
+			<groupId>org.scala-lang.macro-paradise</groupId>
 			<artifactId>scala-library</artifactId>
 			<version>2.10.2-SNAPSHOT</version>
 		</dependency>
@@ -15,6 +15,7 @@
 			<artifactId>scala-reflect</artifactId>
 			<version>2.10.2-SNAPSHOT</version>
 		</dependency>
+
 	</dependencies>
 	<parent>
 		<groupId>org.scalamacros</groupId>
@@ -29,10 +30,11 @@
 				<artifactId>scala-maven-plugin</artifactId>
 				<version>3.1.6-SNAPSHOT</version>
 				<configuration>
-				<!-- For this to work you need to build scala-maven-plugin yourself from 
+					<!-- For this to work you need to build scala-maven-plugin yourself from 
 				branch feature/add-scalaOrganization-parameter of
 				https://github.com/evantill/scala-maven-plugin -->
 					<scala.organization>org.scala-lang.macro-paradise</scala.organization>
+					<scalaVersion>2.10.2-SNAPSHOT</scalaVersion>
 					<recompileMode>incremental</recompileMode>
 					<useZincServer>true</useZincServer>
 				</configuration>
@@ -47,4 +49,18 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>snapshots-repo-x</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 </project>

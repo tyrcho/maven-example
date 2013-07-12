@@ -1,0 +1,1076 @@
+Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 14:51:28+0100)
+Maven home: d:\dev\tools\apache-maven-3.0.5
+Java version: 1.7.0_07, vendor: Oracle Corporation
+Java home: D:\dev\jdk1.7.0_07\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from d:\dev\tools\apache-maven-3.0.5\conf\settings.xml
+[DEBUG] Reading user settings from D:\Utilisateurs\a518291\.m2\settings.xml
+[DEBUG] Using local repository at d:\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for d:\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project org.scalamacros:maven-example:pom:1.0.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.scalamacros:macros:jar:1.0.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.scalamacros:core:jar:1.0.0: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] maven-example
+[INFO] macros
+[INFO] core
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.scalamacros:maven-example:pom:1.0.0
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Project: org.scalamacros:macros:jar:1.0.0
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Project: org.scalamacros:core:jar:1.0.0
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building maven-example 1.0.0
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.scalamacros:maven-example:1.0.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] Repositories (dependencies): [kazan-repo (http://kazan.priv.atos.fr/nexus/content/groups/public/, releases+snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building macros 1.0.0
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.scalamacros:macros:1.0.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [kazan-repo (http://kazan.priv.atos.fr/nexus/content/groups/public/, releases+snapshots), snapshots-repo-x (https://oss.sonatype.org/content/repositories/snapshots, snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <projectArtifact default-value="${project.artifact}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile (compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addJavacArgs>${addJavacArgs}</addJavacArgs>
+  <addScalacArgs>${addScalacArgs}</addScalacArgs>
+  <addZincArgs>${addZincArgs}</addZincArgs>
+  <analysisCacheFile default-value="${project.build.directory}/analysis/compile">${analysisCacheFile}</analysisCacheFile>
+  <checkMultipleScalaVersions default-value="true">${maven.scala.checkConsistency}</checkMultipleScalaVersions>
+  <compileOrder default-value="mixed">${compileOrder}</compileOrder>
+  <displayCmd default-value="false">${displayCmd}</displayCmd>
+  <encoding>${project.build.sourceEncoding}</encoding>
+  <failOnMultipleScalaVersions default-value="false"/>
+  <forceUseArgFile default-value="false"/>
+  <fork default-value="true"/>
+  <javacArgs>${javacArgs}</javacArgs>
+  <javacGenerateDebugSymbols default-value="true">${javacGenerateDebugSymbols}</javacGenerateDebugSymbols>
+  <localRepo>${localRepository}</localRepo>
+  <localRepository>${localRepository}</localRepository>
+  <notifyCompilation default-value="true">${notifyCompilation}</notifyCompilation>
+  <outputDir>${project.build.outputDirectory}</outputDir>
+  <pluginArtifacts default-value="${plugin.artifacts}"/>
+  <project>${project}</project>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <recompileMode default-value="all">incremental</recompileMode>
+  <remoteRepos>${project.remoteArtifactRepositories}</remoteRepos>
+  <scalaClassName default-value="scala.tools.nsc.Main">${maven.scala.className}</scalaClassName>
+  <scalaCompatVersion>${scala.compat.version}</scalaCompatVersion>
+  <scalaHome>${scala.home}</scalaHome>
+  <scalaOrganization default-value="org.scala-lang">${scala.organization}</scalaOrganization>
+  <scalaVersion>2.10.2-SNAPSHOT</scalaVersion>
+  <sendJavaToScalac default-value="true"/>
+  <session>${session}</session>
+  <source>${maven.compiler.source}</source>
+  <sourceDir>${project.build.sourceDirectory}/../scala</sourceDir>
+  <target>${maven.compiler.target}</target>
+  <useCanonicalPath default-value="true">${maven.scala.useCanonicalPath}</useCanonicalPath>
+  <useZincServer default-value="false">true</useZincServer>
+  <zincPort default-value="3030">${zincPort}</zincPort>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Could not find metadata org.scala-lang.macro-paradise:scala-library:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://kazan.priv.atos.fr/nexus/content/groups/public/
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for https://oss.sonatype.org/content/repositories/snapshots via proxy.priv.atos.fr:3128 as 
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/macro-paradise/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml
+Downloading: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/macro-paradise/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml
+379/239 B               Downloaded: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/macro-paradise/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml (379 B at 0.9 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\macro-paradise\scala-library\2.10.2-SNAPSHOT\resolver-status.properties
+379 B               Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/macro-paradise/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml (379 B at 0.3 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\macro-paradise\scala-library\2.10.2-SNAPSHOT\resolver-status.properties
+[DEBUG] Could not find metadata org.scala-lang.macro-paradise:scala-reflect:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://kazan.priv.atos.fr/nexus/content/groups/public/
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for https://oss.sonatype.org/content/repositories/snapshots via proxy.priv.atos.fr:3128 as 
+Downloading: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/macro-paradise/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/macro-paradise/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml
+379/241 B               Downloaded: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/macro-paradise/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml (379 B at 5.6 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\resolver-status.properties
+379 B               Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/macro-paradise/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml (379 B at 1.0 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\resolver-status.properties
+[DEBUG] org.scalamacros:macros:jar:1.0.0
+[DEBUG]    org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]    org.scala-lang.macro-paradise:scala-reflect:jar:2.10.2-SNAPSHOT:compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ macros ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.collection < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.version < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.artifact < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.graph < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.resolution < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.0:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.5:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@3d637d45]
+[debug] execute contextualize
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.5:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: org.scalamacros:macros:1.0.0 @ D:\dev\workspaces\samples\maven-scala-macros\macros\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@7c8deca3
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.MOZ_PLUGIN_PATH=C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\, env.USERDOMAIN_ROAMINGPROFILE=FR01_AWL, env.DEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.PROMPT=$P$G, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=D:\dev\jdk1.7.0_07\jre\lib\resources.jar;D:\dev\jdk1.7.0_07\jre\lib\rt.jar;D:\dev\jdk1.7.0_07\jre\lib\sunrsasign.jar;D:\dev\jdk1.7.0_07\jre\lib\jsse.jar;D:\dev\jdk1.7.0_07\jre\lib\jce.jar;D:\dev\jdk1.7.0_07\jre\lib\charsets.jar;D:\dev\jdk1.7.0_07\jre\lib\jfr.jar;D:\dev\jdk1.7.0_07\jre\classes, env.COMPUTERNAME=L81077, user.country.format=FR, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_07-b11, env.HOMEPATH=\, env.HOMESHARE=\\sanawl11\A518291$, user.name=A518291, maven.build.version=Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 14:51:28+0100), user.language.format=fr, env.WINDOWS_TRACING_FLAGS=3, env.PATH=C:\oraclexe\app\oracle\product\11.2.0\server\bin;D:\dev\jdk1.7.0_07\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;d:\dev\tools\apache-maven-3.0.5\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\PuTTY;C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\giter8\;D:\dev\tools\sbt\;C:\Program Files (x86)\Windows Live\Shared;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;d:\dev\tools\Git\cmd;d:\dev\tools\Git\bin;C:\Program Files (x86)\VisualSVN Server\bin;c:\unxutils\usr\local\wbin\;d:\dev\tools\scala-2.10.1\bin;D:\dev\tools\giter8;S:\tools\play-2.1.0;D:\dev\tools\groovy-2.1.0-rc-3\bin;S:\workspaces\MEX\TOOLS\mex-claudia, user.language=en, env.SBT_HOME=D:\dev\tools\sbt\, env.WINDIR=C:\Windows, sun.boot.library.path=D:\dev\jdk1.7.0_07\jre\bin, classworlds.conf=d:\dev\tools\apache-maven-3.0.5\bin\m2.conf, env.CLAUDIA_HOME=S:\workspaces\MEX\TOOLS\mex-claudia, java.version=1.7.0_07, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel, user.timezone=Europe/Paris, env.TEMP=c:\temp, sun.arch.data.model=64, env.SSH_AGENT_PID=8636, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, java.endorsed.dirs=D:\dev\jdk1.7.0_07\jre\lib\endorsed, env.JDK_HOME=D:\dev\jdk1.7.0_07, env.VSEDEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.cpu.isalist=amd64, env.HOMEDRIVE=U:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, env.VIM_EXE_DIR=d:\dev\tools\Vim\vim73, file.separator=\, java.specification.name=Java Platform API Specification, env.GROOVY_HOME=D:\dev\tools\groovy-2.1.0-rc-3, java.class.version=51.0, user.country=US, java.home=D:\dev\jdk1.7.0_07\jre, env.APPDATA=D:\Utilisateurs\a518291\AppData\Roaming, env.PUBLIC=D:\Utilisateurs\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=6.1, env.JAVA_OPTS=-Dhttp.proxyHost=proxy -Dhttp.proxyPort=3128, path.separator=;, java.vm.version=23.3-b01, user.variant=, env.USERPROFILE=D:\Utilisateurs\a518291, env.JAVA_HOME=D:\dev\jdk1.7.0_07, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=c:\temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.script=, env.NO_PROXY=*.priv.atos.fr, user.home=D:\Utilisateurs\a518291, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.=EXITCODE=00000001, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, env.M2_HOME=d:\dev\tools\apache-maven-3.0.5, java.library.path=D:\dev\jdk1.7.0_07\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\oraclexe\app\oracle\product\11.2.0\server\bin;D:\dev\jdk1.7.0_07\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;d:\dev\tools\apache-maven-3.0.5\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\PuTTY;C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\giter8\;D:\dev\tools\sbt\;C:\Program Files (x86)\Windows Live\Shared;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;d:\dev\tools\Git\cmd;d:\dev\tools\Git\bin;C:\Program Files (x86)\VisualSVN Server\bin;c:\unxutils\usr\local\wbin\;d:\dev\tools\scala-2.10.1\bin;D:\dev\tools\giter8;S:\tools\play-2.1.0;D:\dev\tools\groovy-2.1.0-rc-3\bin;S:\workspaces\MEX\TOOLS\mex-claudia;., java.vendor.url=http://java.oracle.com/, env.NUMBER_OF_PROCESSORS=4, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.USERDNSDOMAIN=FR01.AWL.ATOSORIGIN.NET, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=compile -X -U, java.vm.vendor=Oracle Corporation, maven.home=d:\dev\tools\apache-maven-3.0.5, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher compile -X -U, java.class.path=d:\dev\tools\apache-maven-3.0.5\boot\plexus-classworlds-2.4.jar, env.PROGRAMW6432=C:\Program Files, maven.version=3.0.5, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.MAVEN_JAVA_EXE="D:\dev\jdk1.7.0_07\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\FRSPA004, java.vm.specification.version=1.7, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=U:\, java.io.tmpdir=c:\temp\, env.UATDATA=C:\Windows\SysWOW64\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, env.PROCESSOR_REVISION=2a07, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/tmp/ssh-nwpUt11496/agent.11496, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=D:\dev\jdk1.7.0_07\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.=D:=D:\dev\workspaces\samples\maven-scala-macros, user.dir=D:\dev\workspaces\samples\maven-scala-macros, env.LOCALAPPDATA=D:\Utilisateurs\a518291\AppData\Local, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.CLASSWORLDS_JAR="d:\dev\tools\apache-maven-3.0.5\boot\plexus-classworlds-2.4.jar", env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.PLAY_HOME=d:\dev\tools\play-2.1.0, env.VISUALSVN_SERVER=C:\Program Files (x86)\VisualSVN Server\, env.ERROR_CODE=0, env.USERNAME=A518291, env.SCALA_HOME=d:\dev\tools\scala-2.10.1, file.encoding=Cp1252, env.USERDOMAIN=FR01_AWL, java.specification.version=1.7, env.PROCESSOR_LEVEL=6}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ macros ---
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:2.3.2:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:1.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:2.3.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:1.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2, parent: sun.misc.Launcher$AppClassLoader@3d637d45]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\dev\workspaces\samples\maven-scala-macros\macros
+[DEBUG]   (f) buildDirectory = D:\dev\workspaces\samples\maven-scala-macros\macros\target
+[DEBUG]   (f) classpathElements = [D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes, d:\repository\org\scala-lang\macro-paradise\scala-library\2.10.2-SNAPSHOT\scala-library-2.10.2-SNAPSHOT.jar, d:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\scala-reflect-2.10.2-SNAPSHOT.jar]
+[DEBUG]   (f) compileSourceRoots = [D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = D:\dev\workspaces\samples\maven-scala-macros\macros\target\generated-sources\annotations
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes
+[DEBUG]   (f) outputFileName = macros-1.0.0
+[DEBUG]   (f) projectArtifact = org.scalamacros:macros:jar:1.0.0
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@7c8deca3
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- scala-maven-plugin:3.1.6-SNAPSHOT:compile (compile) @ macros ---
+[DEBUG] net.alchim31.maven:scala-maven-plugin:jar:3.1.6-SNAPSHOT:
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-plugin-api:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0.4:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.13.1:compile
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.13.1:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.13.1:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.13.1:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:2.3.0:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:2.3.0:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0:compile
+[DEBUG]                org.sonatype.sisu:sisu-guava:jar:0.9.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-dependency-tree:jar:1.2:compile
+[DEBUG]    org.apache.commons:commons-exec:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-classworlds:jar:2.4:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.8:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.1.2:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.1.2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0.4:compile
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:2.0.11:compile
+[DEBUG]    com.typesafe.zinc:zinc:jar:0.2.0:compile
+[DEBUG]       org.scala-lang:scala-library:jar:2.9.2:compile
+[DEBUG]       com.typesafe.sbt:compiler-interface:jar:sources:0.12.1:compile
+[DEBUG]    com.typesafe.sbt:incremental-compiler:jar:0.12.1:compile
+[DEBUG]       com.typesafe.sbt:sbt-interface:jar:0.12.1:compile
+[DEBUG]       org.scala-lang:scala-compiler:jar:2.9.2:compile
+[DEBUG] Created new class realm plugin>net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin>net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT
+[DEBUG]   Included: net.alchim31.maven:scala-maven-plugin:jar:3.1.6-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.13.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:2.3.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-guava:jar:0.9.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:1.2
+[DEBUG]   Included: org.apache.commons:commons-exec:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.1.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.1.2
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:2.0.11
+[DEBUG]   Included: com.typesafe.zinc:zinc:jar:0.2.0
+[DEBUG]   Included: org.scala-lang:scala-library:jar:2.9.2
+[DEBUG]   Included: com.typesafe.sbt:compiler-interface:jar:sources:0.12.1
+[DEBUG]   Included: com.typesafe.sbt:incremental-compiler:jar:0.12.1
+[DEBUG]   Included: com.typesafe.sbt:sbt-interface:jar:0.12.1
+[DEBUG]   Included: org.scala-lang:scala-compiler:jar:2.9.2
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0.4
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0.4
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0.4
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0.4
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0.4
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0.4
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0.4
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.13.1
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.13.1
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.13.1
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:2.3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.2.1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.4
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0.4
+[DEBUG] Configuring mojo net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile from plugin realm ClassRealm[plugin>net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@3d637d45]
+[DEBUG] Configuring mojo 'net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile' with basic configurator -->
+[DEBUG]   (f) analysisCacheFile = D:\dev\workspaces\samples\maven-scala-macros\macros\target\analysis\compile
+[DEBUG]   (f) checkMultipleScalaVersions = true
+[DEBUG]   (f) compileOrder = mixed
+[DEBUG]   (f) displayCmd = false
+[DEBUG]   (f) failOnMultipleScalaVersions = false
+[DEBUG]   (f) forceUseArgFile = false
+[DEBUG]   (f) fork = true
+[DEBUG]   (f) javacArgs = []
+[DEBUG]   (f) javacGenerateDebugSymbols = true
+[DEBUG]   (f) localRepo =        id: local
+      url: file:///d:/repository/
+   layout: none
+
+[DEBUG]   (f) localRepository =        id: local
+      url: file:///d:/repository/
+   layout: none
+
+[DEBUG]   (f) notifyCompilation = true
+[DEBUG]   (f) outputDir = D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes
+[DEBUG]   (f) pluginArtifacts = [net.alchim31.maven:scala-maven-plugin:maven-plugin:3.1.6-SNAPSHOT:, org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile, org.sonatype.aether:aether-util:jar:1.13.1:compile, org.sonatype.sisu:sisu-inject-bean:jar:2.3.0:compile, org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0:compile, org.sonatype.sisu:sisu-guava:jar:0.9.9:compile, org.codehaus.plexus:plexus-interpolation:jar:1.14:compile, org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher:jar:1.4:compile, org.apache.maven.shared:maven-dependency-tree:jar:1.2:compile, org.apache.commons:commons-exec:jar:1.1:compile, org.codehaus.plexus:plexus-utils:jar:3.0:compile, org.codehaus.plexus:plexus-archiver:jar:2.1:compile, junit:junit:jar:3.8.1:compile, org.codehaus.plexus:plexus-io:jar:2.0.2:compile, org.apache.maven:maven-archiver:jar:2.5:compile, org.apache.maven.doxia:doxia-sink-api:jar:1.1.2:compile, org.apache.maven.doxia:doxia-logging-api:jar:1.1.2:compile, org.apache.maven.shared:maven-invoker:jar:2.0.11:compile, com.typesafe.zinc:zinc:jar:0.2.0:compile, org.scala-lang:scala-library:jar:2.9.2:compile, com.typesafe.sbt:compiler-interface:jar:sources:0.12.1:compile, com.typesafe.sbt:incremental-compiler:jar:0.12.1:compile, com.typesafe.sbt:sbt-interface:jar:0.12.1:compile, org.scala-lang:scala-compiler:jar:2.9.2:compile]
+[DEBUG]   (f) project = MavenProject: org.scalamacros:macros:1.0.0 @ D:\dev\workspaces\samples\maven-scala-macros\macros\pom.xml
+[DEBUG]   (f) reactorProjects = [MavenProject: org.scalamacros:maven-example:1.0.0 @ D:\dev\workspaces\samples\maven-scala-macros\pom.xml, MavenProject: org.scalamacros:macros:1.0.0 @ D:\dev\workspaces\samples\maven-scala-macros\macros\pom.xml, MavenProject: org.scalamacros:core:1.0.0 @ D:\dev\workspaces\samples\maven-scala-macros\core\pom.xml]
+[DEBUG]   (f) recompileMode = incremental
+[DEBUG]   (f) remoteRepos = [       id: kazan-repo
+      url: http://kazan.priv.atos.fr/nexus/content/groups/public/
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => true, update => daily]
+,        id: snapshots-repo-x
+      url: https://oss.sonatype.org/content/repositories/snapshots
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => false, update => daily]
+,        id: central
+      url: http://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+]
+[DEBUG]   (f) scalaClassName = scala.tools.nsc.Main
+[DEBUG]   (f) scalaOrganization = org.scala-lang
+[DEBUG]   (f) scalaVersion = 2.10.2-SNAPSHOT
+[DEBUG]   (f) sendJavaToScalac = true
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@7c8deca3
+[DEBUG]   (f) sourceDir = D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\java\..\scala
+[DEBUG]   (f) useCanonicalPath = true
+[DEBUG]   (f) useZincServer = true
+[DEBUG]   (f) zincPort = 3030
+[DEBUG] -- end configuration --
+[DEBUG] Checking for multiple versions of scala
+[DEBUG] Dependency tree resolution listener events:
+[DEBUG] testArtifact: artifact=org.scalamacros:macros:jar:1.0.0
+[DEBUG] includeArtifact: artifact=org.scalamacros:macros:jar:1.0.0
+[DEBUG] startProcessChildren: artifact=org.scalamacros:macros:jar:1.0.0
+[DEBUG]   testArtifact: artifact=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   includeArtifact: artifact=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   startProcessChildren: artifact=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   endProcessChildren: artifact=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   testArtifact: artifact=org.scala-lang.macro-paradise:scala-reflect:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   includeArtifact: artifact=org.scala-lang.macro-paradise:scala-reflect:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   startProcessChildren: artifact=org.scala-lang.macro-paradise:scala-reflect:jar:2.10.2-SNAPSHOT:compile
+[DEBUG] Could not find metadata org.scala-lang.macro-paradise:scala-library:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Skipped remote update check for org.scala-lang.macro-paradise:scala-library:2.10.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Skipped remote update check for org.scala-lang.macro-paradise:scala-library:2.10.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG]     testArtifact: artifact=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]     omitForNearer: omitted=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile kept=org.scala-lang.macro-paradise:scala-library:jar:2.10.2-SNAPSHOT:compile
+[DEBUG]   endProcessChildren: artifact=org.scala-lang.macro-paradise:scala-reflect:jar:2.10.2-SNAPSHOT:compile
+[DEBUG] endProcessChildren: artifact=org.scalamacros:macros:jar:1.0.0
+[DEBUG] D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala
+[DEBUG] includes = [**/*.scala,**/*.java,]
+[DEBUG] excludes = []
+[DEBUG] Could not find metadata org.scala-lang:scala-library:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for https://oss.sonatype.org/content/repositories/snapshots via proxy.priv.atos.fr:3128 as 
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://kazan.priv.atos.fr/nexus/content/groups/public/
+Downloading: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml
+364/230 B               Downloaded: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml (364 B at 2.4 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\scala-library\2.10.2-SNAPSHOT\resolver-status.properties
+364 B               Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.10.2-SNAPSHOT/maven-metadata.xml (364 B at 1.0 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\scala-library\2.10.2-SNAPSHOT\resolver-status.properties
+[DEBUG] Could not find metadata org.scala-lang:scala-compiler:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://kazan.priv.atos.fr/nexus/content/groups/public/
+[DEBUG] Downloading: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/scala-compiler/2.10.2-SNAPSHOT/maven-metadata.xml
+Using connector WagonRepositoryConnector with priority 0 for https://oss.sonatype.org/content/repositories/snapshots via proxy.priv.atos.fr:3128 as 
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.10.2-SNAPSHOT/maven-metadata.xml
+365/231 B               Downloaded: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/scala-compiler/2.10.2-SNAPSHOT/maven-metadata.xml (365 B at 2.7 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\scala-compiler\2.10.2-SNAPSHOT\resolver-status.properties
+365 B               Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.10.2-SNAPSHOT/maven-metadata.xml (365 B at 1.0 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\scala-compiler\2.10.2-SNAPSHOT\resolver-status.properties
+[DEBUG] Could not find metadata org.scala-lang:scala-compiler:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Skipped remote update check for org.scala-lang:scala-compiler:2.10.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Skipped remote update check for org.scala-lang:scala-compiler:2.10.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Could not find metadata org.scala-lang:scala-reflect:2.10.2-SNAPSHOT/maven-metadata.xml in local (d:\repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://kazan.priv.atos.fr/nexus/content/groups/public/
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for https://oss.sonatype.org/content/repositories/snapshots via proxy.priv.atos.fr:3128 as 
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml
+Downloading: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml
+364/230 B               Downloaded: http://kazan.priv.atos.fr/nexus/content/groups/public/org/scala-lang/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml (364 B at 2.4 KB/sec)
+364 B       [DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\scala-reflect\2.10.2-SNAPSHOT\resolver-status.properties
+        Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-reflect/2.10.2-SNAPSHOT/maven-metadata.xml (364 B at 1.0 KB/sec)
+[DEBUG] Writing resolution tracking file d:\repository\org\scala-lang\scala-reflect\2.10.2-SNAPSHOT\resolver-status.properties
+[WARNING] Zinc server is not available at port 3030 - reverting to normal incremental compile
+[INFO] Using incremental compilation
+[DEBUG] Setup = {
+[DEBUG]    scala compiler = D:\repository\org\scala-lang\scala-compiler\2.10.2-SNAPSHOT\scala-compiler-2.10.2-SNAPSHOT.jar
+[DEBUG]    scala library = D:\repository\org\scala-lang\scala-library\2.10.2-SNAPSHOT\scala-library-2.10.2-SNAPSHOT.jar
+[DEBUG]    scala extra = {
+[DEBUG]       D:\repository\org\scala-lang\scala-reflect\2.10.2-SNAPSHOT\scala-reflect-2.10.2-SNAPSHOT.jar
+[DEBUG]    }
+[DEBUG]    sbt interface = D:\repository\com\typesafe\sbt\sbt-interface\0.12.1\sbt-interface-0.12.1.jar
+[DEBUG]    compiler interface sources = D:\repository\com\typesafe\sbt\compiler-interface\0.12.1\compiler-interface-0.12.1-sources.jar
+[DEBUG]    java home = 
+[DEBUG]    cache directory = D:\Utilisateurs\a518291\.zinc\0.2.0
+[DEBUG] }
+[DEBUG] Incremental compiler = Compiler(Scala 2.10.2-20130530-074427-60d462ef6e) [3f62569b]
+[DEBUG] Inputs = {
+[DEBUG]    classpath = {
+[DEBUG]       D:\repository\org\scala-lang\macro-paradise\scala-library\2.10.2-SNAPSHOT\scala-library-2.10.2-SNAPSHOT.jar
+[DEBUG]       D:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\scala-reflect-2.10.2-SNAPSHOT.jar
+[DEBUG]    }
+[DEBUG]    sources = {
+[DEBUG]       D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Lifter.scala
+[DEBUG]       D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Macros.scala
+[DEBUG]    }
+[DEBUG]    output directory = D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes
+[DEBUG]    scalac options = {}
+[DEBUG]    javac options = {
+[DEBUG]       -g
+[DEBUG]    }
+[DEBUG]    cache file = D:\dev\workspaces\samples\maven-scala-macros\macros\target\analysis\compile
+[DEBUG]    analysis map = {
+[DEBUG]       D:\repository\org\scala-lang\macro-paradise\scala-library\2.10.2-SNAPSHOT\scala-library-2.10.2-SNAPSHOT.jar = Analysis: 
+[DEBUG]       D:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\scala-reflect-2.10.2-SNAPSHOT.jar = Analysis: 
+[DEBUG]    }
+[DEBUG]    force clean = false
+[DEBUG]    java only = false
+[DEBUG]    compile order = Mixed
+[DEBUG]    output relations = 
+[DEBUG]    output products = 
+[DEBUG] }
+[DEBUG] 
+Initial source changes: 
+	removed:Set()
+	added: Set(D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Lifter.scala, D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Macros.scala)
+	modified: Set()
+Removed products: Set()
+Modified external sources: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Lifter.scala, D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Macros.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+[DEBUG] Initially invalidated: Set(D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Lifter.scala, D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Macros.scala)
+[INFO] Compiling 2 Scala sources to D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes...
+[DEBUG] Running cached compiler 79282205, interfacing (CompilerInterface) with Scala compiler version 2.10.2-20130530-074427-60d462ef6e
+[DEBUG] Calling Scala compiler with arguments  (CompilerInterface):
+	-d
+	D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes
+	-bootclasspath
+	D:\dev\jdk1.7.0_07\jre\lib\resources.jar;D:\dev\jdk1.7.0_07\jre\lib\rt.jar;D:\dev\jdk1.7.0_07\jre\lib\sunrsasign.jar;D:\dev\jdk1.7.0_07\jre\lib\jsse.jar;D:\dev\jdk1.7.0_07\jre\lib\jce.jar;D:\dev\jdk1.7.0_07\jre\lib\charsets.jar;D:\dev\jdk1.7.0_07\jre\lib\jfr.jar;D:\dev\jdk1.7.0_07\jre\classes;D:\repository\org\scala-lang\scala-library\2.10.2-SNAPSHOT\scala-library-2.10.2-SNAPSHOT.jar
+	-classpath
+	D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes;D:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\scala-reflect-2.10.2-SNAPSHOT.jar
+[ERROR] 
+     while compiling: D:\dev\workspaces\samples\maven-scala-macros\macros\src\main\scala\Lifter.scala
+        during phase: typer
+     library version: version 2.10.2-20130530-074427-60d462ef6e
+    compiler version: version 2.10.2-20130530-074427-60d462ef6e
+  reconstructed args: -classpath D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes;D:\repository\org\scala-lang\macro-paradise\scala-reflect\2.10.2-SNAPSHOT\scala-reflect-2.10.2-SNAPSHOT.jar -d D:\dev\workspaces\samples\maven-scala-macros\macros\target\classes -bootclasspath D:\dev\jdk1.7.0_07\jre\lib\resources.jar;D:\dev\jdk1.7.0_07\jre\lib\rt.jar;D:\dev\jdk1.7.0_07\jre\lib\sunrsasign.jar;D:\dev\jdk1.7.0_07\jre\lib\jsse.jar;D:\dev\jdk1.7.0_07\jre\lib\jce.jar;D:\dev\jdk1.7.0_07\jre\lib\charsets.jar;D:\dev\jdk1.7.0_07\jre\lib\jfr.jar;D:\dev\jdk1.7.0_07\jre\classes;D:\repository\org\scala-lang\scala-library\2.10.2-SNAPSHOT\scala-library-2.10.2-SNAPSHOT.jar
+
+  last tree to typer: Select(ApplyImplicitView(method Quasiquote), q)
+              symbol: object q in class Quasiquote (flags: <module> <triedcooking>)
+   symbol definition: object q
+                 tpe: reflect.runtime.universe.Quasiquote#q.type
+       symbol owners: object q -> class Quasiquote -> trait Quasiquotes -> package api
+      context owners: value classdef -> object lifter -> package <empty>
+
+== Enclosing template or block ==
+
+Template( // val <local lifter>: <notype> in object lifter
+  "App" // parents
+  ValDef(
+    private
+    "_"
+    <tpt>
+    <empty>
+  )
+  // 4 statements
+  DefDef( // def <init>: <?> in object lifter
+    <method>
+    "<init>"
+    []
+    List(Nil)
+    <tpt>
+    Block(
+      Apply(
+        super."<init>"
+        Nil
+      )
+      ()
+    )
+  )
+  ValDef( // private[this] val classdef: <?> in object lifter
+    private <local>
+    "classdef"
+    <tpt>
+    Apply(
+      StringContext("class Foo extends Liftable {\r\n    def bar[Baz](faz: Int) = faz * 2\r\n    def fuz(caz: Int)(shmaz: Int): Int = caz * shmaz\r\n  }")."q"
+      Nil
+    )
+  )
+  DefDef( // def lift: <?> in object lifter
+    <method>
+    "lift"
+    []
+    // 1 parameter list
+    ValDef(
+      <param>
+      "tree"
+      "Tree"
+      <empty>
+    )
+    <tpt>
+    Block(
+      // 5 statements
+      ValDef(
+        private <local> <synthetic>
+        "x$1"
+        <tpt>
+        Match(
+          Annotated(
+            Apply(
+              new scala.unchecked."<init>"
+              Nil
+            )
+            "tree"
+          )
+          CaseDef(
+            Apply(
+              StringContext("class ", " extends Liftable { ..", " }")."q"
+              // 2 arguments
+              Bind(
+                "name"
+                "_"
+              )
+              Bind(
+                "body"
+                "_"
+              )
+            )
+            Apply(
+              "scala"."Tuple2"
+              // 2 arguments
+              "name"
+              "body"
+            )
+          )
+        )
+      )
+      ValDef(
+        0
+        "name"
+        <tpt>
+        "x$1"."_1"
+      )
+      ValDef(
+        0
+        "body"
+        <tpt>
+        "x$1"."_2"
+      )
+      ValDef(
+        0
+        "newdefs"
+        <tpt>
+        Apply(
+          "body"."collect"
+          Match(
+            <empty>
+            CaseDef(
+              Apply(
+                StringContext("def ", "[..", "](...", "): ", " = ", "")."q"
+                // 5 arguments
+                Bind(
+                  "fname"
+                  "_"
+                )
+                Bind(
+                  "tparams"
+                  "_"
+                )
+                Bind(
+                  "argss"
+                  "_"
+                )
+                Bind(
+                  "tresult"
+                  "_"
+                )
+                Bind(
+                  "fbody"
+                  "_"
+                )
+              )
+              Block(
+                // 4 statements
+                ValDef(
+                  0
+                  "newresult"
+                  <tpt>
+                  If(
+                    "tresult"."nonEmpty"
+                    Apply(
+                      StringContext("Future[", "]")."tq"
+                      "tresult"
+                    )
+                    "tresult"
+                  )
+                )
+                ValDef(
+                  0
+                  "newname"
+                  <tpt>
+                  Apply(
+                    "TermName"
+                    Apply(
+                      "async"."$plus"
+                      "fname"."toString"."capitalize"
+                    )
+                  )
+                )
+                ValDef(
+                  0
+                  "argss0"
+                  <tpt>
+                  Apply(
+                    "argss"."map"
+                    Function(
+                      ValDef(
+                        <param>
+                        "a0"
+                        <tpt>
+                        <empty>
+                      )
+                      Apply(
+                        "a0"."map"
+                        Function(
+                          ValDef(
+                            <param>
+                            "a1"
+                            <tpt>
+                            <empty>
+                          )
+                          TypeApply(
+                            "a1"."asInstanceOf"
+                            "ValDef"
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+                ValDef(
+                  0
+                  "tparams0"
+                  <tpt>
+                  tparams.map(((x$2) => x$2.asInstanceOf[TypeDef]))."toList"
+                )
+                Apply(
+                  StringContext("def ", "[..", "](...", "): ", " = future { ", " }")."q"
+                  // 5 arguments
+                  "newname"
+                  "tparams0"
+                  "argss0"
+                  "newresult"
+                  "fbody"
+                )
+              )
+            )
+          )
+        )
+      )
+      ValDef(
+        0
+        "name0"
+        <tpt>
+        TypeApply(
+          "name"."asInstanceOf"
+          "TypeName"
+        )
+      )
+      Apply(
+        StringContext("class ", " extends AnyRef { ..", " }")."q"
+        // 2 arguments
+        "name0"
+        body.$plus$plus(newdefs)."toList"
+      )
+    )
+  )
+  Apply(
+    "println"
+    Apply(
+      "lift"
+      "classdef"
+    )
+  )
+)
+
+== Expanded type of tree ==
+
+TypeRef(
+  pre = TypeRef(
+    pre = SingleType(
+      pre = SingleType(
+        pre = SingleType(
+          pre = SingleType(
+            pre = SingleType(
+              pre = ThisType(package <root>)
+              package scala
+            )
+            package reflect
+          )
+          package runtime
+        )
+        package runtime
+      )
+      value universe
+    )
+    TypeSymbol(implicit class Quasiquote extends AnyRef)
+  )
+  TypeSymbol(class q extends AnyRef)
+)
+
+uncaught exception during compilation: scala.MatchError
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] maven-example ..................................... SUCCESS [0.003s]
+[INFO] macros ............................................ FAILURE [9.059s]
+[INFO] core .............................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.193s
+[INFO] Finished at: Fri Jul 12 13:39:32 CEST 2013
+[INFO] Final Memory: 13M/233M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile (compile) on project macros: Execution compile of goal net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile failed: None (of class scala.None$) -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile (compile) on project macros: Execution compile of goal net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile failed: None (of class scala.None$)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:225)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.apache.maven.plugin.PluginExecutionException: Execution compile of goal net.alchim31.maven:scala-maven-plugin:3.1.6-SNAPSHOT:compile failed: None (of class scala.None$)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:110)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	... 19 more
+Caused by: scala.MatchError: None (of class scala.None$)
+	at scala.tools.nsc.typechecker.Macros$class.scala$tools$nsc$typechecker$Macros$$loadMacroImplBinding(Macros.scala:204)
+	at scala.tools.nsc.typechecker.Macros$$anonfun$scala$tools$nsc$typechecker$Macros$$macroRuntime$3.apply(Macros.scala:522)
+	at scala.tools.nsc.typechecker.Macros$$anonfun$scala$tools$nsc$typechecker$Macros$$macroRuntime$3.apply(Macros.scala:521)
+	at scala.collection.mutable.MapLike$class.getOrElseUpdate(MapLike.scala:189)
+	at scala.collection.mutable.AbstractMap.getOrElseUpdate(Map.scala:91)
+	at scala.tools.nsc.typechecker.Macros$class.scala$tools$nsc$typechecker$Macros$$macroRuntime(Macros.scala:521)
+	at scala.tools.nsc.typechecker.Macros$$anonfun$scala$tools$nsc$typechecker$Macros$$macroExpand1$1.apply(Macros.scala:793)
+	at scala.tools.nsc.typechecker.Macros$$anonfun$scala$tools$nsc$typechecker$Macros$$macroExpand1$1.apply(Macros.scala:785)
+	at scala.tools.nsc.Global.withInfoLevel(Global.scala:190)
+	at scala.tools.nsc.typechecker.Macros$class.scala$tools$nsc$typechecker$Macros$$macroExpand1(Macros.scala:785)
+	at scala.tools.nsc.typechecker.Macros$class.macroExpand(Macros.scala:701)
+	at scala.tools.nsc.Global$$anon$1.macroExpand(Global.scala:493)
+	at scala.tools.nsc.typechecker.Typers$Typer.adapt(Typers.scala:1152)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5622)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5683)
+	at scala.tools.nsc.typechecker.Typers$Typer.computeType(Typers.scala:5770)
+	at scala.tools.nsc.typechecker.Namers$Namer.assignTypeToTree(Namers.scala:834)
+	at scala.tools.nsc.typechecker.Namers$Namer.valDefSig(Namers.scala:1315)
+	at scala.tools.nsc.typechecker.Namers$Namer.getSig$1(Namers.scala:1456)
+	at scala.tools.nsc.typechecker.Namers$Namer.typeSig(Namers.scala:1465)
+	at scala.tools.nsc.typechecker.Namers$Namer$$anonfun$monoTypeCompleter$1$$anonfun$apply$1.apply$mcV$sp(Namers.scala:731)
+	at scala.tools.nsc.typechecker.Namers$Namer$$anonfun$monoTypeCompleter$1$$anonfun$apply$1.apply(Namers.scala:730)
+	at scala.tools.nsc.typechecker.Namers$Namer$$anonfun$monoTypeCompleter$1$$anonfun$apply$1.apply(Namers.scala:730)
+	at scala.tools.nsc.typechecker.Namers$Namer.scala$tools$nsc$typechecker$Namers$Namer$$logAndValidate(Namers.scala:1498)
+	at scala.tools.nsc.typechecker.Namers$Namer$$anonfun$monoTypeCompleter$1.apply(Namers.scala:730)
+	at scala.tools.nsc.typechecker.Namers$Namer$$anonfun$monoTypeCompleter$1.apply(Namers.scala:729)
+	at scala.tools.nsc.typechecker.Namers$$anon$1.completeImpl(Namers.scala:1613)
+	at scala.tools.nsc.typechecker.Namers$LockingTypeCompleter$class.complete(Namers.scala:1621)
+	at scala.tools.nsc.typechecker.Namers$$anon$1.complete(Namers.scala:1611)
+	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1229)
+	at scala.reflect.internal.Symbols$Symbol.initialize(Symbols.scala:1365)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth$class.addDerivedTrees(MethodSynthesis.scala:225)
+	at scala.tools.nsc.typechecker.Namers$Namer.addDerivedTrees(Namers.scala:55)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$31.apply(Typers.scala:1917)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$31.apply(Typers.scala:1917)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$rewrappingWrapperTrees$1.apply(Typers.scala:1856)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$rewrappingWrapperTrees$1.apply(Typers.scala:1853)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:251)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:251)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:251)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:105)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1917)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1800)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5546)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5604)
+	at scala.tools.nsc.typechecker.Typers$Typer.scala$tools$nsc$typechecker$Typers$Typer$$typedStat$1(Typers.scala:2926)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$60.apply(Typers.scala:3030)
+	at scala.tools.nsc.typechecker.Typers$Typer$$anonfun$60.apply(Typers.scala:3030)
+	at scala.collection.immutable.List.loop$1(List.scala:170)
+	at scala.collection.immutable.List.mapConserve(List.scala:186)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3030)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5263)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5549)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5604)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5666)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.apply(Analyzer.scala:99)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:464)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3$$anonfun$run$1.apply(Analyzer.scala:91)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3$$anonfun$run$1.apply(Analyzer.scala:91)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$$anon$3.run(Analyzer.scala:91)
+	at scala.tools.nsc.Global$Run.compileUnitsInternal(Global.scala:1583)
+	at scala.tools.nsc.Global$Run.compileUnits(Global.scala:1557)
+	at scala.tools.nsc.Global$Run.compileSources(Global.scala:1553)
+	at scala.tools.nsc.Global$Run.compile(Global.scala:1662)
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:90)
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:72)
+	at xsbt.CompilerInterface.run(CompilerInterface.scala:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sbt.compiler.AnalyzingCompiler.call(AnalyzingCompiler.scala:73)
+	at sbt.compiler.AnalyzingCompiler.compile(AnalyzingCompiler.scala:35)
+	at sbt.compiler.AnalyzingCompiler.compile(AnalyzingCompiler.scala:29)
+	at sbt.compiler.AggressiveCompile$$anonfun$4$$anonfun$compileScala$1$1.apply$mcV$sp(AggressiveCompile.scala:71)
+	at sbt.compiler.AggressiveCompile$$anonfun$4$$anonfun$compileScala$1$1.apply(AggressiveCompile.scala:71)
+	at sbt.compiler.AggressiveCompile$$anonfun$4$$anonfun$compileScala$1$1.apply(AggressiveCompile.scala:71)
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:101)
+	at sbt.compiler.AggressiveCompile$$anonfun$4.compileScala$1(AggressiveCompile.scala:70)
+	at sbt.compiler.AggressiveCompile$$anonfun$4.apply(AggressiveCompile.scala:88)
+	at sbt.compiler.AggressiveCompile$$anonfun$4.apply(AggressiveCompile.scala:60)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:24)
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:22)
+	at sbt.inc.Incremental$.cycle(Incremental.scala:40)
+	at sbt.inc.Incremental$.compile(Incremental.scala:25)
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:20)
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:96)
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:44)
+	at com.typesafe.zinc.Compiler.compile(Compiler.scala:158)
+	at com.typesafe.zinc.Compiler.compile(Compiler.scala:142)
+	at sbt_inc.SbtIncrementalCompiler.compile(SbtIncrementalCompiler.java:77)
+	at scala_maven.ScalaCompilerSupport.incrementalCompile(ScalaCompilerSupport.java:308)
+	at scala_maven.ScalaCompilerSupport.compile(ScalaCompilerSupport.java:124)
+	at scala_maven.ScalaCompilerSupport.doExecute(ScalaCompilerSupport.java:104)
+	at scala_maven.ScalaMojoSupport.execute(ScalaMojoSupport.java:482)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	... 20 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :macros
