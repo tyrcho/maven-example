@@ -8,6 +8,12 @@
   <artifactId>maven-example</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
+  <properties>
+        <scala.standard.organisation>org.scala-lang</scala.standard.organisation>
+        <scala.standard.version>2.10.0</scala.standard.version>
+        <scala.macroparadise.organisation>org.scala-lang.macro-paradise</scala.macroparadise.organisation>
+        <scala.macroparadise.version>2.10.2-SNAPSHOT</scala.macroparadise.version>
+    </properties>
 
   <modules>
     <module>macros</module>
